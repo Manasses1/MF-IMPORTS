@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Contato - MF IMPORTS</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
@@ -16,62 +17,21 @@
     </header>
 
     <main>
-        <h2>Entre em Contato</h2>
-        <p>Preencha o formulário abaixo e retornaremos o mais rápido possível:</p>
+        <h2>Entre em contato</h2>
+        <form>
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" required>
 
-        <form action="#" method="post">
-            <table>
-                <tr>
-                    <td><label for="nome">Nome:</label></td>
-                    <td><input type="text" id="nome" name="nome" placeholder="Digite seu nome" required></td>
-                </tr>
-                <tr>
-                    <td><label for="email">E-mail:</label></td>
-                    <td><input type="email" id="email" name="email" placeholder="exemplo@email.com" required></td>
-                </tr>
-                <tr>
-                    <td><label for="telefone">Telefone:</label></td>
-                    <td><input type="tel" id="telefone" name="telefone" placeholder="(xx) xxxxx-xxxx"></td>
-                </tr>
-                <tr>
-                    <td><label for="data">Data de Nascimento:</label></td>
-                    <td><input type="date" id="data" name="data"></td>
-                </tr>
-                <tr>
-                    <td><label for="idade">Idade:</label></td>
-                    <td><input type="number" id="idade" name="idade" min="1" max="120"></td>
-                </tr>
-                <tr>
-                    <td><label for="assunto">Assunto:</label></td>
-                    <td>
-                        <select id="assunto" name="assunto" required>
-                            <option value="">Selecione...</option>
-                            <option value="duvida">Dúvida</option>
-                            <option value="compra">Compra</option>
-                            <option value="suporte">Suporte Técnico</option>
-                        </select>
-                    </td>
-                </tr>
-                <tr>
-                    <td><label>Preferência de Contato:</label></td>
-                    <td>
-                        <input type="radio" id="contatoEmail" name="preferencia" value="email" checked>
-                        <label for="contatoEmail">E-mail</label>
-                        <input type="radio" id="contatoTelefone" name="preferencia" value="telefone">
-                        <label for="contatoTelefone">Telefone</label>
-                    </td>
-                </tr>
-                <tr>
-                    <td><label for="mensagem">Mensagem:</label></td>
-                    <td><textarea id="mensagem" name="mensagem" rows="5" cols="30" placeholder="Digite sua mensagem"></textarea></td>
-                </tr>
-                <tr>
-                    <td colspan="2" style="text-align: center;">
-                        <button type="submit">Enviar</button>
-                        <button type="reset">Limpar</button>
-                    </td>
-                </tr>
-            </table>
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="telefone">Telefone:</label>
+            <input type="tel" id="telefone" name="telefone" required>
+
+            <label for="mensagem">Mensagem:</label>
+            <textarea id="mensagem" name="mensagem" rows="5" required></textarea>
+
+            <button type="submit">Enviar</button>
         </form>
     </main>
 
