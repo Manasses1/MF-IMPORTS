@@ -1,0 +1,144 @@
+/* ======== ESTILO GLOBAL ======== */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: url("./IMAGENS/fundo.jpg") no-repeat center center fixed;
+    background-size: cover;
+    color: #333;
+}
+
+/* ======== CABEÇALHO ======== */
+header {
+    background-color: rgba(0, 0, 0, 0.85);
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+
+    /* fixo no topo */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 28px;
+}
+
+nav {
+    margin-top: 10px;
+    position: relative; /* relativo ao header */
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* ======== CONTEÚDO PRINCIPAL ======== */
+main {
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.95);
+    margin: 120px auto 60px auto; /* afastar do header e rodapé */
+    max-width: 900px;
+    border-radius: 10px;
+    box-shadow: 0 3px 8px rgba(0,0,0,0.2);
+
+    position: relative; /* elementos dentro podem ser reposicionados */
+}
+
+h2 {
+    color: #222;
+    border-bottom: 2px solid #ccc;
+    padding-bottom: 5px;
+    margin-bottom: 20px;
+}
+
+/* ======== RODAPÉ ======== */
+footer {
+    background-color: rgba(0, 0, 0, 0.85);
+    color: #fff;
+    text-align: center;
+    padding: 15px;
+
+    /* sempre fixo no fim da página */
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
+
+/* ======== LISTA DE PRODUTOS ======== */
+ol {
+    list-style: none;
+    padding: 0;
+}
+
+ol li {
+    margin-bottom: 25px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #ddd;
+    position: relative;
+}
+
+ol li img {
+    display: block;
+    margin-top: 10px;
+    border-radius: 5px;
+
+    /* exemplo de deslocamento */
+    position: relative;
+    left: 15px;
+}
+
+/* ======== FORMULÁRIO DE CONTATO ======== */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+
+    position: relative;
+    left: 10px; /* deslocado levemente */
+}
+
+label {
+    font-weight: bold;
+    color: #333;
+}
+
+input, textarea {
+    padding: 10px;
+    border: 1px solid #bbb;
+    border-radius: 5px;
+    font-size: 14px;
+    width: 95%;
+    box-sizing: border-box;
+}
+
+button {
+    background-color: #007BFF;
+    color: #fff;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+
+    /* exemplo com absolute */
+    position: absolute;
+    right: 20px;
+    bottom: -60px;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
